@@ -1,0 +1,8 @@
+ %s,
+
+Tu cuenta en %s ha sido activada.
+
+Ahora puedes iniciar sesión con tu nombre de usuario y contraseña.
+
+Atentamente,
+El equipo de %s
