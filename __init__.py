@@ -29,7 +29,7 @@ def webhook_whatsapp():
       
         import openai
         # Indica el API Key
-        openai.api_key = "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"
+        openai.api_key = "KEY de ChatGPT"
         # Uso de ChapGPT en Python
         model_engine = "text-davinci-003"
         prompt = mensaje
@@ -54,10 +54,10 @@ def webhook_whatsapp():
         #CONECTAMOS A LA BASE DE DATOS
         import mysql.connector
         mydb = mysql.connector.connect(
-          host = "mysql-testchatbot.alwaysdata.net",
-          user = "313959_chatgpt",
-          password = "MAPAO2708",
-          database='testchatbot_gptwa'
+          host = "localhost",
+          user = "Usuario de localhost",
+          password = "contraseña",
+          database='Nombre de la base de datos que estas usando'
         )
         mycursor = mydb.cursor()
         query="SELECT count(id) AS cantidad FROM registro WHERE id_wa='" + idWA + "';"
@@ -78,9 +78,9 @@ def webhook_whatsapp():
 def enviar(telefonoRecibe,respuesta):
   from heyoo import WhatsApp
   #TOKEN DE ACCESO DE FACEBOOK
-  token='EAAWrF6YvccUBAP2AZBZCcZCEvoZAtd0jJQF7vMdgZC96LYZC0bgRXnQ4XFDrAsdbIPjWZAOegQfMv6wgDFmZCtb2abP8nig0XZAxeGI2qnK3J0ppZBYiZBXCI91WJBXfO5Iz6ov1ufDspiaNfjCQhNfZCG0M5IsJNZBmwiRm4MrukOcbukw6AXdkrQW8snaPox0Af2VWlelYZBJZBqEdQZDZD'
+  token='Key temporal/permanente de Facebook'
   #IDENTIFICADOR DE NÚMERO DE TELÉFONO
-  idNumeroTeléfono='115458991551520'
+  idNumeroTeléfono='Esto se encuentra en configuraciones de facebook'
   #INICIALIZAMOS ENVIO DE MENSAJES
   mensajeWa=WhatsApp(token,idNumeroTeléfono)
   
